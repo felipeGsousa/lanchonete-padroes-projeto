@@ -16,44 +16,51 @@ from lanche_decorator.hamburguer_decorator.Cebola import Cebola
 from lanche_decorator.hamburguer_decorator.Cheddar import Cheddar
 from lanche_decorator.hamburguer_decorator.Alface import Alface
 
-print("===============================#(Início)#===============================\n")
+def main():
+    
+    print("===============================#(Início)#===============================\n")
 
-bolo = Bolo()
-bolo = Manager(bolo)
-bolo.iniciaPreparo(Cozinhar())
-bolo.lancheCozido()
-bolo.paraMontagem(Montar())
-Cobertura(Recheio(bolo).operation()).operation()
-bolo.montadoPronto()
+    bolo = Bolo()
+    bolo = Manager(bolo)
+    bolo.iniciaPreparo(Cozinhar())
+    bolo.lancheCozido()
+    bolo.paraMontagem(Montar())
+    Cobertura(Recheio(bolo).operation()).operation()
+    bolo.montadoPronto()
 
-print("=======================================================================\n")
+    print("=======================================================================\n")
 
-hamburguer = Hamburguer()
-hamburguer = Manager(hamburguer)
-hamburguer.iniciaPreparo(Cozinhar())
-hamburguer.lancheCozido()
-hamburguer.paraMontagem(Montar())
-Pickles(Cheddar(Cebola(Alface(Tomate(Pao(hamburguer).operation()).operation()).operation()).operation()).operation()).operation()
-hamburguer.montadoPronto()
+    hamburguer = Hamburguer()
+    hamburguer = Manager(hamburguer)
+    hamburguer.iniciaPreparo(Cozinhar())
+    hamburguer.lancheCozido()
+    hamburguer.paraMontagem(Montar())
+    Pickles(Cheddar(Cebola(Alface(Tomate(Pao(hamburguer).operation()).operation()).operation()).operation()).operation()).operation()
+    hamburguer.montadoPronto()
 
-print("=======================================================================\n")
+    print("=======================================================================\n")
 
-bolo = Bolo()
-bolo = Manager(bolo)
-bolo.iniciaPreparo(Cozinhar())
-bolo.lancheCozido()
-bolo.paraMontagem(Montar())
-Cobertura(bolo).operation()
-bolo.montadoPronto()
+    bolo = Bolo()
+    bolo = Manager(bolo)
+    bolo.iniciaPreparo(Cozinhar())
+    bolo.lancheCozido()
+    bolo.paraMontagem(Montar())
+    Cobertura(bolo).operation()
+    bolo.montadoPronto()
 
-print(f"=======================================================================\n")
+    print(f"=======================================================================\n")
 
-hamburguer = Hamburguer()
-hamburguer = Manager(hamburguer)
-hamburguer.iniciaPreparo(Cozinhar())
-hamburguer.lancheCozido()
-hamburguer.paraMontagem(Montar())
-Pickles(Cheddar(Pao(hamburguer).operation()).operation()).operation()
-hamburguer.montadoPronto()
+    hamburguer = Hamburguer()
+    hamburguer = Manager(hamburguer)
+    hamburguer.iniciaPreparo(Cozinhar())
+    hamburguer.lancheCozido()
+    hamburguer.paraMontagem(Montar())
+    Pickles(Cheddar(Pao(hamburguer).operation()).operation()).operation()
+    hamburguer.montadoPronto()
 
-print("=================================#(Fim)#=================================\n")
+    print("=================================#(Fim)#=================================\n")
+
+
+
+if __name__ == "__main__":
+    main()

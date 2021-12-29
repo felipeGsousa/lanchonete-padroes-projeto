@@ -4,10 +4,9 @@ from lanche_state.Cozido import Cozido
 from lanche_state.Cozinhando import Cozinhando
 from lanche_state.Montando import Montando
 from lanche_state.Pronto import Pronto
-from lanche_strategy.Cozinhar import Cozinhar
 from lanche_strategy.Preparacao_service import Preparacao
 from lanche_strategy.Strategy import Strategy
-from modelo.Lanche import Lanche
+
 
 class Manager: 
 
