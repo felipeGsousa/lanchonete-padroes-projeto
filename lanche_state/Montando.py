@@ -7,16 +7,16 @@ class Montando(State):
         super().__init__(lanche)
 
     def cru(self) -> None:
-        return f"## {self._lanche.getNome()} já está sendo montado!!! ##\n"
+        return f"Status ==> {self._lanche.getNome()} já está sendo montado!!! \n"
 
     def cozinhando(self) -> None:
-        return f"## {self._lanche.getNome()} já está sendo montado!!! ##\n"
+        return f"Status ==> {self._lanche.getNome()} já está sendo montado!!! \n"
 
     def cozido(self) -> None:
-        return f"## {self._lanche.getNome()} já está sendo montado!!! ##\n"
+        return f"Status ==> {self._lanche.getNome()} já está sendo montado!!! \n"
 
     def montando(self) -> None:
-        return f"## {self._lanche.getNome()} já está sendo montado!!! ##\n"
+        return f"Status ==> {self._lanche.getNome()} já está sendo montado!!! \n"
 
     def pronto(self) -> None:
-        return f"## {self._lanche.getNome()} já está sendo montado!!! ##\n"
+        return f"Status ==> {self._lanche.getNome()} já está sendo montado!!! \n"

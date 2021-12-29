@@ -3,4 +3,4 @@ from lanche_decorator.hamburguer_decorator.Hamburguer_decorator import Hamburgue
 
 class Alface(Hamburguer_decorator): 
     def operation(self) -> str:
-        print("- Adiciona alface\n")
+        print("Decorador Hamburguer ==> Adiciona alface\n")
